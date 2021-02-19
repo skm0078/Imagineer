@@ -7,6 +7,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
 hr{
   border: 10px solid oldlace;
   border-radius: 5px;
@@ -70,6 +75,18 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+      margin-left: auto;
   }
 }
 
