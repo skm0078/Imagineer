@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   html,body
   {
       width: 100%;
@@ -89,9 +89,6 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0px;
       padding: 0px;
       overflow-x: hidden; 
-  }
-  #hero .hero-container {
-    background: url(../img/hero-bg.jpg) top center;
   }
 }
 
@@ -941,7 +938,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     align-items: center;
     min-height:8vh;
     flex-direction: column;
-    background-color: cornsilk; 
+    background-color: white; 
   }
   .footer-social-link h2{
         color:rebeccapurple;
@@ -1048,16 +1045,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   .top3d{
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-    display: flex;
+    display: table-cell;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     perspective: 1000px;
+    position: relative;
   }
   .container3d {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 260px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    margin-bottom: 30px;
   }
   .card {
     transform-style: preserve-3d;
