@@ -90,6 +90,9 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0px;
       overflow-x: hidden; 
   }
+  #hero .hero-container {
+    background: url(../img/hero-bg.jpg) top center;
+  }
 }
 
 .back-to-top:focus {
