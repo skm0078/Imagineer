@@ -41,8 +41,8 @@ shivaAnime(card,container,title,sneaker,purchase,description,sizes);
 function shivaAnime(card,container,title,sneaker,purchase,description,sizes){
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
-  let xAxis = (card.offsetWidth / 2 - e.pageX) / 255;
-  let yAxis = (card.offsetHeight / 2 - e.pageY) / 255;
+  let xAxis = (card.offsetWidth / 2 - e.pageX) / 200;
+  let yAxis = (card.offsetHeight / 2 - e.pageY) / 200;
   card.style.transform = `rotateX(${yAxis}deg) rotateZ(${xAxis}deg)`;
 // card.style.transform = `rotateY(15deg) rotateX(-5deg)`;
 });

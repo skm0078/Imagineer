@@ -932,7 +932,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 .footer-social-link{
-    margin-top: 30px;
+    margin-top: 2rem;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -942,7 +942,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   .footer-social-link h2{
         color:rebeccapurple;
-        margin-bottom: 5px;
+        margin-bottom: 0.5rem;
     }
     .footer-social-link ul{
         position:relative;
@@ -962,16 +962,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     .footer-social-link ul li label .icon{
         cursor: pointer;
         position:relative;
-        width:80px;
-        height:80px;
+        width:5rem;
+        height:5rem;
         background-color: cadetblue;
         color:#555;
-        font-size: 32px;
+        font-size: 2rem;
         margin: 0px 20px 2px 9px;
         display:flex;
         justify-content: center;
         align-items: center;
-        border-radius: 10px;
+        border-radius: 0.8rem;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
@@ -985,8 +985,8 @@ body.mobile-nav-active #mobile-nav-toggle {
         position:absolute;
         top:2px;
         left:2px;
-        width:calc(100% - 5px);
-        height:calc(50% - 2.5px);
+        width:calc(100% - 1rem);
+        height:calc(50% - 1.5rem);
         background-color: rgb(255,255,255,.05);
     }
     .footer-social-link ul li label input[type="button"]:hover ~ .icon{
@@ -1053,7 +1053,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .container3d {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
   .card {
