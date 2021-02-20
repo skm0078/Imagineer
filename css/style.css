@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   html,body
   {
       width: 100%;
@@ -89,7 +89,6 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0px;
       padding: 0px;
       overflow-x: hidden; 
-      margin-left: auto;
   }
 }
 
