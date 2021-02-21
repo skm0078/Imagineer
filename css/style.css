@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 600px) {
   .back-to-top {
     bottom: 15px;
   }
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 600px) {
   #hero {
     background-attachment: fixed;
   }
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 600px) {
   #hero h1 {
     font-size: 28px;
     line-height: 1rem;
@@ -1150,3 +1150,66 @@ body.mobile-nav-active #mobile-nav-toggle {
  /*<!--==========================
   Review Slider Section
   ============================-->*/
+
+  /* Light Video Embed */
+
+/* Adapted from 
+   Light YouTube Embeds by @labnol 
+   http://labnol.org/?p=27941 */
+
+   .light-video-embed {
+    position: relative;
+    padding-bottom: 56.23%;
+    /* Use 75% for 4:3 videos */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 5px;
+  }
+  
+  .light-video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+  }
+  
+  .light-video-embed img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+  }
+  
+  .light-video-embed img:hover {
+    filter: brightness(75%);
+  }
+  
+  .light-video-embed .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    /* background: url(/img/ytplay.png) no-repeat; */
+    cursor: pointer;
+  }
+
+  /* End light video embed */
