@@ -81,7 +81,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* Media query problem */
+@media (min-width: 600px) and (max-width: 768px) {
   html,body
   {
       width: 100%;
@@ -91,6 +92,8 @@ h1, h2, h3, h4, h5, h6 {
       overflow-x: hidden; 
   }
 }
+
+
 
 .back-to-top:focus {
   background: rgba(0, 0, 0, 0.2);
