@@ -5,7 +5,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$to = "skmukherjee2021@gmail.com";
+$to = "imagineer904@gmail.com";
 $body = "This is an automated message. Please don't reply this email. n\n $email ";
 
 mail($to,$subject,$body,$message);
