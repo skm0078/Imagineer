@@ -183,7 +183,7 @@ jQuery(document).ready(function ($) {
   $('a[href*="#"]:not([href="#"])').on('click', function () {
     if (
       location.pathname.replace(/^\//, '') ==
-        this.pathname.replace(/^\//, '') &&
+      this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash)
@@ -232,3 +232,27 @@ jQuery(document).ready(function ($) {
     return false
   })
 })
+
+//Anime Js Code
+
+anime({
+  targets: '.portfolio',
+  loop: true,
+  easing: 'easeInOutSine',
+  duration: 8000,
+  direction: 'alternate'
+});
+
+anime({
+  targets: '.portfolio .anime-target',
+  scale: [
+    { value: .1, easing: 'easeOutSine', duration: 500 },
+    { value: 1, easing: 'easeInOutQuad', duration: 1200 }
+  ],
+  delay: anime.stagger(200, { grid: [8, 8], from: 'center' })
+});
+
+//Anime End
+
+
+
