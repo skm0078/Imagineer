@@ -235,21 +235,25 @@ jQuery(document).ready(function ($) {
 
 //Anime Js Code
 
-anime({
-  targets: '.portfolio',
-  loop: true,
-  easing: 'easeInOutSine',
-  duration: 8000,
-  direction: 'alternate'
-});
 
+
+// anime({
+//   targets: '.portfolio-item',
+//   loop: true,
+//   translateX: 270,
+//   easing: 'easeInOutSine',
+//   duration: 8000,
+//   direction: 'alternate'
+// });
 anime({
-  targets: '.portfolio .anime-target',
+  targets: '.portfolio-item',
   scale: [
     { value: .1, easing: 'easeOutSine', duration: 500 },
     { value: 1, easing: 'easeInOutQuad', duration: 1200 }
   ],
-  delay: anime.stagger(200, { grid: [8, 8], from: 'center' })
+  delay: anime.stagger(200, { grid: [8, 5], from: 'center' }),
+  loop: true,
+  direction: 'alternate'
 });
 
 //Anime End
