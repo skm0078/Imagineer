@@ -22,7 +22,7 @@ purchase = document.querySelector('.purchase2')
 description = document.querySelector('.info2 h3')
 sizes = document.querySelector('.sizes2')
 
-// shivaAnime(card, container, title, sneaker, purchase, description, sizes)
+shivaAnime(card, container, title, sneaker, purchase, description, sizes)
 
 //For 2
 //Movement Animation to happen
