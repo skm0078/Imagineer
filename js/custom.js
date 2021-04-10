@@ -22,7 +22,7 @@ purchase = document.querySelector('.purchase2')
 description = document.querySelector('.info2 h3')
 sizes = document.querySelector('.sizes2')
 
-shivaAnime(card, container, title, sneaker, purchase, description, sizes)
+// shivaAnime(card, container, title, sneaker, purchase, description, sizes)
 
 //For 2
 //Movement Animation to happen
@@ -253,8 +253,23 @@ anime({
   ],
   delay: anime.stagger(200, { grid: [8, 5], from: 'center' }),
   loop: true,
+  easing: 'easeInOutSine',
   direction: 'alternate'
 });
+
+anime({
+  targets: '.icon',
+  translateX: anime.stagger(10, {grid: [14, 5], from: 'center', axis: 'x'}),
+  translateY: anime.stagger(10, {grid: [14, 5], from: 'center', axis: 'y'}),
+  rotateX: anime.stagger([2, 8], {grid: [14, 5], from: 'center', axis: 'x'}),
+  delay: anime.stagger(200, {grid: [14, 5], from: 'center'}),
+  autoplay: true,
+  loop: true,
+  easing: 'easeInBack',
+  direction: 'alternate',
+});
+
+
 
 //Anime End
 

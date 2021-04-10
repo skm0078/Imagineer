@@ -80,7 +80,7 @@ h6 {
   border-radius: 2px;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 768px) and (min-width: 600px) {
@@ -88,6 +88,7 @@ h6 {
     bottom: 15px;
   }
 }
+
 
 /* Media query problem */
 @media (min-width: 600px) and (max-width: 768px) {
@@ -101,6 +102,12 @@ h6 {
   }
 }
 
+@media (min-width: 800px) and (max-width: 1500px) {
+  .best-works{
+    display: flex;align-items: center; justify-content: space-evenly;
+  }
+}
+/* style=" */
 .back-to-top:focus {
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -146,7 +153,17 @@ h6 {
   vertical-align: middle;
   background-size: 100% 100%;
 }
-
+@media (max-width: 768px) {
+  #hero .hero-container{
+    background: url(../img/jpg/Artboard.png) top center;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-size: 100% 100%;
+  }
+}
 /* @media screen and (max-width: 600px) {
   #hero .hero-container {
     background: url(../img/banner.small.jpg) no-repeat fixed center;
